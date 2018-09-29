@@ -7,7 +7,7 @@ body {font-family: "Times New Roman", Times, serif;
       background-color: fffff0;
       margin: 5ex;
       line-height: 2.5ex;
-      width:100ex;
+      max-width:90ex;
       text-align:left;
 }
 
@@ -41,3 +41,13 @@ li{
    margin-bottom: 1.5ex;
 }
 
+#toc strong {font-weight:bold;
+}
+
+#toc ul {list-style-type:circle;
+padding-left:1em;
+margin-bottom:1ex;
+}
+
+#toc li {margin:0.3ex;
+}
