@@ -1,0 +1,16 @@
+#!/bin/sh
+
+mkdir -p .tmp
+
+mv .tmp/*.aux ./
+mv .tmp/*.toc ./
+
+NAME=`basename \`pwd\``
+rm -f ${NAME}.dvi, ${NAME}.ps, ${NAME}.pdf, ${NAME}2.ps, ${NAME}2fr.ps
+
+pdflatex --src-specials \\nonstopmode\\input main.tex 
+
+mv *.aux .tmp/
+mv *.toc .tmp/
+
+mv main.pdf ${NAME}.pdf

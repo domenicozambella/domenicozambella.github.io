@@ -1,0 +1,114 @@
+\setuppapersize[A2]
+
+\definefont [AboveTitleFont] [Serif at 22pt]
+\definefont [TitleFont] [Serif at 48pt]
+\definefont [AulaFont] [palatino]
+\setupbodyfont [palatino,12pt,sans]
+
+
+\setuplayout [backspace=30mm,width=360mm,height=630mm,header=0mm,topspace=22mm]
+
+\setupcolor[hex]
+\definecolor[green][h=aaffaa]
+\definecolor[yellow][h=ffffaa]
+\definecolor[gray][h=dddddd]
+
+\setupheadertexts [] [] []
+
+%\setupinterlinespace [line=3ex]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\starttext
+
+
+%\showbodyfont[cmr]
+
+%\hfil\externalfigure[logoUniTo.eps][width=8cm,align=center]\hfil
+
+\startalignment [center]
+
+{\tfd
+\cap{Università degli Studi di Torino}\blank[big]
+
+Dipartimento di Matematica G. Peano}
+
+{
+
+\blank [8*big,force]
+
+\switchtobodyfont[palatino,32pt,sans]
+28 aprile 2014
+\blank [3*big]
+
+una giornata }
+  \blank [5*big]
+
+{\switchtobodyfont[palatino,52pt,sans]\bf
+  Curiosando nella Matematica
+  \blank [4*big]
+
+  Browsing through Mathematics 
+}
+
+
+\stopalignment
+
+\smash{\hfill\externalfigure[TorinoSiluette2.png][width=360mm]}
+%\smash{\hfill\externalfigure[TorinoSiluette.green.png][width=360mm]}
+%\smash{\hfill\externalfigure[TorinoSiluette.yellow.png][width=360mm]}
+\blank [3*big]
+
+
+
+
+
+\startnarrower [10*left,10*right]
+\defineparagraphs[blabla][n=2,distance=15mm]
+\setupparagraphs[blabla]
+\startblabla
+This is a series of talks aimed at students in mathematics. They are meant to stimulate curiosity and interest in topics that are rarely mentioned in regular lectures. They range over diverse areas of mathematics and they require little to no background knowledge.\blabla
+
+The talks will be given by staff of the Department of Mathematics and a few PhD students. None of the speakers are receiving any compensation, so we would like to express our gratitude to all of them.\blank
+
+The event has been organized by Vivina Barutello, Luigi Vezzoni, Domenico Zambella, Cristina Zucca. For further information contact the organizers.
+
+
+\stopblabla
+\stopnarrower
+
+
+
+\blank [2*big]
+
+
+
+
+%\switchtobodyfont[10pt, sans]
+
+\setupTABLE[c][1][width=15ex,background=color,backgroundcolor=green,align=left,offset=1mm]
+\setupTABLE[c][2,3,4,5][width=8.24cm,offset=2mm]
+\setupTABLE[r][1,7][align=center,background=color,backgroundcolor=green,align=center]
+\setupTABLE[r][align=right,background=color,backgroundcolor=yellow]
+\setupTABLE[r][6][background=color,backgroundcolor=gray]
+\setupTABLE[r][7][background=none]
+
+
+
+
+
+\input table2
+
+\vskip-15mm
+\blank
+\startnarrower [33*left,0*right]
+Find the abstracts of the talks in \\ http;//wwww.personalweb.unito.it/domenico.zambella/curiosando2014
+\stopnarrower
+\vfill
+
+
+\stoptext
+
+
+
+

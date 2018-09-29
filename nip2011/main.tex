@@ -1,0 +1,107 @@
+\documentclass[10pt, oneside]{article}
+\usepackage[a4paper,width=150mm]{geometry}
+\usepackage{pstricks}
+\usepackage{euscript}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsrefs}
+\usepackage{MnSymbol}
+\usepackage{dsfont}
+\usepackage{calc}
+\newcommand{\E}{\exists}
+\newcommand{\A}{\forall}
+\newcommand{\dom}{\textrm{dom}}
+\newcommand{\range}{\textrm{rng}}
+\newcommand{\imp}{\rightarrow}
+\newcommand{\IFF}{\Leftrightarrow}
+\newcommand{\IMP}{\Rightarrow}
+\newcommand{\id}{\textrm{id}}
+\newcommand{\sm}{\smallsetminus}
+\newcommand{\0}{\varnothing}
+\newcommand{\Aut}{\mathop{\textrm{Aut}}}
+\newcommand{\Th}{\mathop{\textrm{Th}}}
+\newcommand{\acl}{\mathord{\textrm{acl}}}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+\parindent=0mm
+\parskip=1\baselineskip
+
+\def\ssf#1{\textsf{\small #1}}
+\newcommand{\labella}[1]{{\sf\footnotesize #1}\hfill}
+\renewenvironment{itemize}
+  {\begin{list}{$\triangleright$}{%
+   \setlength{\parskip}{0mm}
+   \setlength{\topsep}{1ex}
+   \setlength{\rightmargin}{0mm}
+   \setlength{\listparindent}{0mm}
+   \setlength{\itemindent}{0mm}
+   \setlength{\labelwidth}{3ex}
+   \setlength{\itemsep}{1ex}
+   \setlength{\parsep}{0mm}
+   \setlength{\partopsep}{0mm}
+   \setlength{\labelsep}{1ex}
+   \setlength{\leftmargin}{\labelwidth+\labelsep}
+   \let\makelabel\labella}}{%
+   \end{list}}
+
+\renewenvironment{proof}
+  {\begin{list}{$\triangleright$}{%
+   \setlength{\parskip}{0mm}
+   \setlength{\topsep}{1ex}
+   \setlength{\rightmargin}{0mm}
+   \setlength{\listparindent}{0mm}
+   \setlength{\itemindent}{0mm}
+   \setlength{\labelwidth}{3ex}
+   \setlength{\itemsep}{1ex}
+   \setlength{\parsep}{0mm}
+   \setlength{\partopsep}{0mm}
+   \setlength{\labelsep}{1ex}
+   \setlength{\leftmargin}{\labelwidth+\labelsep}
+   \let\makelabel\labella}}{%
+   \end{list}}
+\newtheoremstyle{mio}% name
+     {\parskip}%      Space above
+     {0mm}%      Space below
+     {}%         Body font
+     {}%         Indent amount (empty = no indent, \parindent = para indent)
+     {\bfseries}% Thm head font
+     {}%        Punctuation after thm head
+     {3mm}%     Space after thm head: " " = normal interword space%   \newline = linebreak
+     {\llap{\thmnumber{#2}\hskip2mm}\thmname{#1}\thmnote{\bfseries{} #3}}% Thm head spec (can be left empty, meaning `normal')
+\newcounter{thm}
+
+\renewcommand{\thethm}{\arabic{thm}}
+\theoremstyle{mio}
+\newtheorem{theorem}[thm]{Theorem}
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{proposition}[thm]{Proposition}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{definition}[thm]{Definition}
+
+\def\QED{\noindent\nolinebreak[4]\hfill\rlap{\ \ $\Box$}\medskip}
+\renewenvironment{proof}[1][Proof]%
+{\begin{trivlist}\item[\hskip\labelsep {\bf #1}]}
+{\QED\end{trivlist}}
+
+\def\nonfork{\mathop{\downfree}^{\!u\!}}
+
+\begin{document}
+
+\begin{proposition}
+Let $\phi(x,y)\in L(M)$ have NIP. Then for every tuple $c$ there are a model $N\supseteq M$ such that $N\nonfork_M c$ and a formula $\psi(x)\in L(N)$ such that $\phi(N,c)=\psi(N)$.
+\end{proposition}
+
+We say that $N$ is $C$-saturated if it realizes every type $p(x)$ over $N,C$ that has $<|N|$ parameters from $N$ and is finitely consistent in $N$. Here $x$ is a tuple of length $\le |N|$.
+
+\begin{lemma}
+If $B\nonfork_M C$ then there is a $C$-saturate model $N\supseteq M,B$ and  $N\nonfork_M C$.
+\end{lemma}
+
+\begin{lemma}
+If $N\nonfork_M C$ and $N$ is $C$-saturated then for every type .
+\end{lemma}
+
+
+
+\end{document}

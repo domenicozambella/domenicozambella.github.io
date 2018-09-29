@@ -1,0 +1,424 @@
+<html>
+  <head>
+    <title>Curiosando nella Matematica</title>
+    <style>
+body
+{ font-family:sans-serif;}
+table,th,td
+{ border:1px solid black;
+  border-collapse:collapse;
+  padding:5px;
+  vertical-align:top;}
+h1
+{ text-align:center;
+  font-weight:900;
+  font-size:x-large;
+}
+h3
+{ text-align:center;
+}
+th
+{ width:40ex;
+  text-align:center;}
+a
+{ text-decoration:none;
+  color:#6b6;
+  font-size:larger;
+  font-weight:900;}
+a.slides
+{ text-decoration:none;
+  color:#6b6;
+  font-size:normal;
+  font-weight:bold;
+  vertical-align:text-bottom;}
+span.dropt
+{ color:#555;
+  font-weight:900;}
+span.dropt:hover 
+{ color:#000;
+  text-decoration: none; 
+  background: #ffffff; 
+  z-index: 6;}
+span.dropt span 
+{ color:#000;
+  font-weight:normal;
+  position: absolute; 
+  left: -9999px;
+  margin: -90px 0 0 0px; 
+  padding: 3px 3px 3px 3px;
+  border-style:solid; 
+  border-color:black; 
+  border-width:1px; 
+  z-index: 6;}
+span.dropt:hover span 
+{ left: 30ex; 
+  background: #ffffff;} 
+div.cappello
+{ margin: auto;
+  width:80ex;
+}
+</style>
+</head>
+<body>
+
+<h3>Torino 28 aprile 2014</h3>
+
+<h3>Una Giornata</h3>
+
+<h1>Curiosando nella Matematica</h1>
+
+<h1>Browsing through Mathematics</h1>
+
+<div class="cappello">
+This is a series of talks aimed at students in mathematics. They are meant to stimulate curiosity and interest in topics that are rarely mentioned in regular lectures.<br/><br/>
+
+They range over diverse areas of mathematics and they require little to no background knowledge.<br/><br/>
+
+The talks will be given by staff of the Department of Mathematics and a few PhD students. None of the speakers are receiving any compensation, so we would like to express our gratitude to all of them.<br/><br/>
+
+For printing, find here the <a href="curiosando2014.pdf">POSTER</a> and the <a href="abstracts.pdf">ABSTRACTS</a>.
+
+<br/><br/>
+Here some notes on how to find your way in <a href="labyrinth.pdf">PALAZZO CAMPANA</a>.
+
+</div>
+
+<br/>
+
+<table style="background-color:#ff9;">
+<tr style="background-color:#9f9;">
+  <td style="width:15ex"></td>
+  <th>aula C</th>
+  <th>aula S</th>
+  <th>aula 5</th>
+  <th>aula B</th>
+</tr>
+
+<tr>
+  <td style="background-color:#ddd;">9:30-9:50</td>
+  <td colspan=3 style="background-color:#ddd;"></td>
+  <td style=" background-color:#ddd">
+          <span style="font-weight:bold">
+          Opening
+          </span>
+          <br/><a class="slides" href="torino.pdf">Slides</a> (Laura Sacerdote)
+          <br/><a class="slides" href="nijmegen.pdf">Slides</a> (Wieb Bosma)
+      </td>
+</tr>
+
+
+<tr>
+  <td>10:00-10:50</td>
+  <td><span class="dropt" title="">Matteo Viale
+      <span style="width: 500px;">
+       <b>Abstract:</b> 
+       We will follow Cantor's basic development of the theory of cardinalities. This theory generalizes to infinite collections the notion of <em>number</em> meant as the quantity of elements of a given finite set of objects. We shall give the definition and basic properties of cardinal numbers and of the arithmetic operation of sum product and exponentiation between them. Finally we will focus  our attention on the continuum problem, which asks for a solution of an elementary question of cardinal arithmetic. Whilst formulated by Cantor in the second half of the 19th century, this problem was shown to be undecidable on the basis of the commonly accepted axioms of set theory by the combined work of Goedel and Cohen almost a century later and is still escaping a definite solution nowadays.
+       <br/><br/>
+       <b>Prerequisites:</b> None.
+    </span>
+    </span>
+    <br/>An introduction to cardinal arithmetic
+    </td>
+  <td><span class="dropt" title="">Paolo Cermelli
+      <span style="width: 500px;">
+      <b>Abstract:</b> The mathematization of life sciences is among the challenges of this century, and requires new ideas and techniques, as well as possibly a new way of thinking math. I will present in this talk a few research topics I have come in contact with recently, ranging from the evolution of communication to biological switches and infection in viruses.
+      <br/><br/>
+      <b>Prerequisites:</b> Systems of ODE, stochastic processes, elmentary game theory.
+      </span>
+      </span>
+      <br/>Some mathematical models of complexity in life sciences
+      </td>
+  <td><span class="dropt" title="">Matteo Semplice
+      <span style="width: 500px;">
+      <b>Abstract:</b> The list of fields in which maths is becoming an important tool is nowadays not limited to the traditional ones like physics and engineering,  but it is growing longer and longer, pushed by the need of quantitative predictions 
+that is pervading many fields. Maths is closing the gap between idealized models  (both theoretical and in the 
+lab, often oversimplified) and real-world experiments 
+(more realistic,  but difficult to control, costly and sometimes limited on ethical  grounds).<br/><br/>
+
+The conservation of cultural heritage is a typical example where in situ experiments are out of question: works of art are unique pieces and no experiment is allowed on them. For the very same reason, no restoration activity on a monument would be allowed on the basis of 
+generic predictions. In between these two extrema, numerical mathematics and scientific computing are now providing tools to make predictions on the state of a work of art and on the evolution of the present damage 
+that are taylored to that particular monument. 
+This allows the planned conservation [1], a safer (and
+cost effective) decision-making strategy for the management of the cultural heritage that is based on quantitative predictions.
+In this seminar I will illustrate the case of marble sulfation: the chemical aggression  by sulfur oxides that damages marble monuments by turning their outer layer in a gypsum crust that easily blackens,  dissolves in rainwater or falls away for temperature induced stresses. 
+A mathematical model that captures the main mechanism of this reaction is introduced [2]  and its sulutions numerically approximated: eventually one ends up with a large non-linear  system  that is solved with the Newton method [3], taking care of guaranteeing its  convergence  and of the fast resolution of the large linear system that  is required at each Newton step [4,5].
+<br/><br/>
+[1] UNESCO - Preventive conservation, maintenance and monitoring of monuments and sites. 
+http://precomos.org/index.php/home/
+<br/><br/>
+[2] D. Aregba Driollet, F. Diele, R. Natalini - A mathematical model for the $\mathrm{{SO}_2}$  aggression to calcium carbonate stones: numerical approximation and asymptotic analysis - SIAM
+ J. Appl. Math. (2004)
+<br/><br/>
+[3] M. Semplice - Preconditioned fully implicit PDE solvers for monument conservation - SIAM Journ. of Sci. Comp. (2010)
+<br/><br/>
+[4] M. Donatelli, M. Semplice, S. Serra-Capizzano - Analysis of multigrid preconditioning for implicit PDE solvers  for degenerate parabolic equations - SIAM J. Matrix Anal. (2011)
+<br/><br/>
+[5] M. Donatelli, M. Semplice, S. Serra-Capizzano - AMG 
+preconditioning for nonlinear degenerate   parabolic equations on nonuniform grids with application to monument degradation - Appl. Numer. Math. (2013)
+      <br/><br/>
+      <b>Prerequisites:</b> Basic numerical analysis
+      </span>
+      </span>
+      <br/>Endangered cultural heritage: math can help!
+  </td>
+  <td><span class="dropt" title="">Susanna Terracini
+      <span style="width: 500px;">
+      <b>Abstract:</b> We will introduce the gravitational n-body problem and the study of its periodic solutions. It is a classical problem, whose complexity makes it the paradigm of complex system. In its full generality it can not be solved nor in any way simplified into a system whose solutions can be expressed in closed form. We will try to understand the role of periodic orbits and symmetries in the description of the complexity of the system. 
+      <br/><br/>
+      <b>Prerequisites:</b> Basic notions of calculus.
+      </span>
+      </span>
+      <br/>Orbits and space-time symmetries in the classical n-body problem
+      <br/><a class="slides" href="terracini.pdf">Slides</a>
+      </td>
+</tr>
+
+
+<!--tr>
+  <td>10:50-11:10</td>
+  <td colspan="4" style="text-align:center"> Coffee break</td>
+</tr-->
+
+<tr style="background-color:#fff;">
+  <td colspan="5"></td>
+</tr>
+<tr>
+  <td>11:00-11:50</td>
+  <td><span class="dropt" title="">Alberto Albano
+      <span style="width: 500px;">
+      <b>Abstract:</b> It is intuitively clear that a curve C in space that is knotted <em>turns around</em> at least two times, that is, its total curvature is at least 4&pi;. This statement can be stated and proved rigorously, and the first proof was given by John Milnor when he was a first year student at Princeton. In the talk we will explain the beautiful idea of Milnor's proof.
+      <br/><br/>
+      <b>Prerequisites:</b> First and second year calculus.
+      </span>
+      </span>
+      <br/>Knots and curvature: a theorem of John Milnor
+  </td>
+  <td><span class="dropt" title="">Clara Silvia Roero
+      <span style="width: 500px;">
+      <b>Abstract:</b>In this lecture I would like to present the most important  mathematicians in Torino from 18th to 20th century and their relationships with international colleagues.
+      <br/><br/>
+      <b>Prerequisites:</b> None.
+      </span>
+      </span>
+      <br/>Mathematicians in Torino University from 18th to 20th century.
+      <br/><a class="slides" href="roero.pdf">Slides</a>
+      </td>
+  <td><span class="dropt" title="">Alessandro Andretta
+       <span style="width: 500px;">
+       <b>Abstract:</b> By hiding enough technical details under the rug, we will try to give a reasonably self-contained account of Cohen's celebrated proof that the Continuum Hypothesis (CH) cannot be proved from the usual axioms of set theory (ZFC). The approach we follow, due to Scott and Solovay, is a rephrasing of Cohen's method of forcing via the so-called boolean valued models.
+       <br/><br/>
+       <b>Prerequisites:</b> A reasonable familiarity with the basics of first order logic, including the notion of formal derivation, boolean algebras, and ZFC set theory, up to ordinals and cardinals.
+       </span>
+       </span>
+      <br/>How do you prove that something is unprovable?
+      <br/><a class="slides" href="andretta.pdf">Slides</a>
+   </td>
+  <td><span class="dropt" title="">Laura Sacerdote
+      <span style="width: 500px;">
+      <b>Abstract:</b> Determining  the expression of functions that can be interpreted as distribution functions of one dimensional random variable is an easy task. However the same aim becomes prohibitive in dimension 2 (or >2). We discuss here how to determine joint distribution functions avoiding to introduce the simplifying hypothesis of independence. Copulas are the tool for this study. We illustrate the usefulness of the discussed approach through some examples and applications.
+      <br/><br/>
+      <b>Prerequisites:</b> A first course in probability (knowledge of joint distributions and their properties).
+      </span>
+      </span>
+      <br/>Joint distributions and copulas. Ideas and applications
+      <br/><a class="slides" href="sacerdote.pdf">Slides</a>
+  </td>
+</tr>
+
+
+<tr style="background-color:#ddd;">
+  <td>12:00-12:30<br/>PhD students<br/></td>
+  <td><span class="dropt" title="">Massimo Borsero
+      <span style="width: 500px;">
+      <b>Abstract:</b> Fourier transform (and its discrete analogue, Fourier series), is a mathematical tool named after the French mathematician J. Fourier (1768 - 1830), widely used both in theory and applications in many fields of science, like mathematics, physics, engineering and biology. In this short talk we will give an elementary introduction to the subject, with an emphasis on the ideas behind the definition of Fourier transform and its applications in simple mathematical models (like ODE).      
+      <br/><br/>
+      <b>Prerequisites:</b> Standard calculus and basic knowledge of ODE.
+      </span>
+      </span>
+      <br/>Fourier transform: why should I care?
+      <br/><a class="slides" href="borsero.pdf">Slides</a>
+      </td>
+   <td><span class="dropt" title="">Andrea Villa
+       <span style="width: 500px;">
+       <b>Abstract:</b> 
+      The word <em>origami</em> comes from Japanese and it means <em>folding papers</em>. It is a kind of game, such as it is mathematics and  maybe for this reason some mathematicians decided to play with origami using mathematical-like rules. Using the rules (or axioms) of Huzita-Hatori we will try to explain and to see by hand some constructions that are possible with origami. Finally, we will provide some stimuli to play.    
+       <br/><br/>
+       <b>Prerequisites:</b> Basic notions of algebra and analytical geometry.
+       </span>
+       </span>
+       <br/>Playing with origami.
+       <br/><a class="slides" href="villa.pdf">Slides</a>
+   </td> 
+  <td><span class="dropt" title="">Filippo Cavallari
+      <span style="width: 500px;">
+      <b>Abstract:</b>
+      Reverse mathematics is a topic in mathematical logic. Its goal is to classify theorems of mathematics (in algebra, analysis, geometry, ect.) according to their axiomatic strength. I will give a brief introduction and present the main results.
+      <br/><br/>
+      <b>Prerequisites:</b> Basic familiarity with the notion of theory in mathematical logic. 
+      </span>
+      </span>
+      <br/>Reverse mathematics.
+      <br/><a class="slides" href="cavallari.pdf">Slides</a>
+   </td>
+   <td><span class="dropt" title="">Silvia Steila
+      <span style="width: 500px;">
+      <b>Abstract:</b>  How many people do you need to invite in a party in order to 
+      have that either n of them mutually know each other or n of them
+      mutually do not know each other? In 1930 F.P. Ramsey proved a theorem 
+      (the Finite Ramsey Theorem ) which answers this question. In the same
+      year he proved that if you have infinitely many people at a party then either
+      there exists an infinite subset whose members all know each other or an
+      an infinite subset none of whose members know each other, the Infinite
+      Ramsey Theorem. These theorems are famous results in combinatorics,
+      and they have many applications in different branches of mathematics. 
+      Theodore Motzkin to describe Ramsey Theorems said 
+<em>the complete disorder is impossible</em>
+      <br/><br/>
+      <b>Prerequisites:</b> None.
+      </span>
+      </span>
+      <br/>Finite and Infinite Ramsey Theorem.
+      <br/><a class="slides" href="steila.pdf">Slides</a>
+   </td>
+</tr>
+
+
+
+<!--
+
+<tr style="background-color:#9f9;">
+<td colspan="5" style="text-align:center">&nbsp;</td>
+</tr>
+-->
+
+<tr style="background-color:#fff;">
+  <td colspan="5"></td>
+</tr>
+
+
+<tr style="background-color:#9f9;">
+  <td style="width:15ex"></td>
+  <th>aula C</th>
+  <th>aula S</th>
+  <th>aula Magna</th>
+  <th>aula Monod</th>
+</tr>
+
+
+
+<tr>
+  <td>14:00-14:50</td>
+  <td><span class="dropt" title="">Ubertino Battisti
+      <span style="width: 500px;">
+      <b>Abstract:</b> Fourier Transform is a very powerful tool and it is the background of several techniques in signal analysis. Nevertheless, it has some drawbacks. Let us consider a music score, roughly speaking, Fourier Transform is able to determine with high precision which note (frequency) is played, but fails in detecting when (time) they are played. It is very precise in frequency, but loses completely time-resolution. In order to overcome this problem several new methods have been developed: STFT (Short Time Fourier Transform), CWT (Continuous Wavelet Transform), ST (Stockwell Transform), Schearlets, Curvelets, Cohen Class distributions. 
+      The idea behind these extensions is to introduce a new parameter which represents the time. In this way, the transform can represent the content of the signal in a certain frequency at a certain time. Heuristically, the aim is to reproduce the music pentagram which is exactly the representation of which notes (frequencies) are played in a fixed time. In the talk I will introduce some time-frequency transforms, focusing mainly on the Stockwell Transform. Then, I will explain how time-frequency analysis can be applied to image processing. Finally, I will show some applications of the Stockwell Transform to image processing. In particular to medical imaging, archeology and watermarking.
+      <br/><br/>
+      <b>Prerequisites:</b> Standard calculus and basic knowledge of ODE.
+      </span>
+      </span>
+      <br/>Time-frequency analysis-applications to medical imaging, archeology, watermarking.
+      </td>
+   <td><span class="dropt" title="">Angelica Pachon
+      <span style="width: 500px;">
+      <b>Abstract:</b> Random Graphs is an active area of research which combines probability theory and graph theory. The subject began in 1960 with the monumental paper "On the Evolution of Random graphs" by Paul Erd&ouml;s and Alfred R&eacute;nyi. At first, the study of random graphs was used to prove deterministic properties of graphs. For example, if we can show that a random graph has with a positive probability a certain property, then a graph must exist with this property. The method of proving deterministic statements using probabilistic arguments is called the probabilistic method.<br/><br/>The initial work by Erd&ouml;s and R&eacute;nyi on random graphs has incited a great amount of work on the field. Later, interest in random graphs of a different nature arose. Due to the increase of computer power, it has become possible to study so- called real networks. Despite the Erd&ouml;s-R&eacute;nyi model does not share all the properties of the networks, its analysis has been very important to understand and study new models.<br/><br/>This talk will show the Erd&ouml;s-R&eacute;nyi model and some of the most important results, also, some new models and their properties.
+
+      <br/><br/>
+      <b>Prerequisites:</b> A first course in probability.
+      </span>
+      </span>
+      <br/>Probability and complex networks
+   </td>
+  <td><span class="dropt" title="">Andrea Mori
+      <span style="width: 500px;">
+      
+      <b>Abstract:</b> We shall briefly review the construction of the real numbers from the natural numbers and show how the construction can be modified to define the so-called field of p-adic numbers which depends on the preliminary choice of a prime number p. We shall explore differences and similarities between real and p-adic numbers and we will give hints about why it is useful to consider the p-adic numbers when tackling arithmetic problems.
+      <br/><br/>
+      <b>Prerequisites:</b> A preliminary knowledge of the concept of metric space (space with a distance defined on it) and of the very basic notions of topology may be of some help.
+      </span>
+      </span>
+      <br/>p-adic numbers: what they are and what they are good for
+      <br/><a class="slides" href="mori.pdf">Slides</a>
+  </td>
+  <td><span class="dropt" title="">Anna Maria Fino
+      <span style="width: 500px;">
+      <b>Abstract:</b> We give an introduction to the Ricci flow  on surfaces and on 3-manifolds, describing  its relations with Poincar&eacute;  and  Thurston  Geometrization Conjecture.
+      <br/><br/>
+      <b>Prerequisites:</b> Basic notions on differentiable surfaces.
+      </span>
+      </span>
+      <br/>Evolution of metrics on surfaces and manifolds
+      </td>
+</tr>
+<tr>
+  <td>15:00-15:50</td>
+  <td><span class="dropt" title="">Ferdinando Arzarello
+      <span style="width: 800px;">
+      <b>Abstract:</b> Everyone knows the Heron formula expressing the area of a triangle in function of its sides.<br/><br/> Starting from an elementary problem on triangles and using this formula, we will arrive to a third degree curve. Exploiting its meaning with respect to the starting problem, we will enter into a remarkable algebraic fact, which concerns such curves (called elliptic) and allows to introduce an operation on them that embodies a group structure.<br/><br/> This can be the starting point of different stories: from the issue of how many rational points do exist on these curves to the possibility of introducing applications to the cryptographic schemes behind secure financial transactions on the web. The elliptic curves have also a central role in the proof of Fermat's Last Theorem and are central area of research in number theory. <br/><br/> The story shows the remarkable unity of mathematics, starting as it does in high school and ending in research. Along the way we will encounter a fundamental idea in modern mathematics: the idea of solving a problem about a particular type of object by situating the object in a more general space and finding the right way of parameterizing that space.   
+      <br/><br/>
+      <b>Prerequisites:</b> The notion of group.
+      </span>
+      </span>
+      </br>From the Heron formula to elliptic curves
+      <br/><a class="slides" href="arzarello.pdf">Slides</a>
+  </td>
+  <td><span class="dropt" title="">Federica Galluzzi
+      <span style="width: 500px;">
+      <b>Abstract:</b> Over the last few years, a new direction in applied mathematics has emerged which tends to use some classical tools in algebra and topology to capture nonlinear variation of data distribution in high dimensional spaces. We present some recent ideas on how algebraic topology can provide novel insights and computational methods for extracting simple descriptions of high dimensional data sets. These methods can be applied to model many situations as biological systems,collective social dynamics, disease outbreaks.
+      <br/><br/>
+      <b>Prerequisites:</b> Familiarity with the notion of group, homomorfism and quotient space. 
+      </span>
+      </span>
+      <br/>Mathematics of Data: Algebraic and Topological Methods
+      <br/><a class="slides" href="galluzzi.pdf">Slides</a>
+   </td>
+  <td><span class="dropt" title="">Marcella Palese
+      <span style="width: 500px;">
+      <b>Abstract:</b> I will review a contemporary geometric formulation of the calculus of  variations whereby conserved quantities, Lagrangians, Euler-Lagrange  equations and Helmholtz conditions of variationality can be described as particular classes of  differential forms on fibered manifolds and the formal calculus of  variations itself is depicted in its whole as a subsequence of the de Rham sequence: wonderfully, the de Rham  cohomology is the obstruction from local to global in the inverse  problems of the calculus of variations too. An outlook to applications, open problems and recent developments  will follow.      
+      <br/><br/>
+      <b>Prerequisites:</b> Basics of classical calculus of variations, fibered  manifolds, differential forms, cohomology
+      </span>
+      </span>
+      <br/>From local to global in the calculus of variations
+  </td>
+  <td><span class="dropt" title="">Ezio Venturino
+      <span style="width: 500px;">
+       <b>Abstract:</b> The possible dynamics of an ecosystem composed by domestic or wild herbivores grazing on pastures are investigated, paying attention to a phenomenon that occurs especially in the cold season when the food is scarcer, namely trees debarking. The long term possible consequences of the damages inflicted on the trees in urban parks and forests in the wild parks are evaluated.
+       <br/><br/>
+       <b>Prerequisites:</b>  A reasonable familiarity with the basics of ODE.
+       </span>
+       </span>
+      <br/>Modeling trees debarking by wild animals in natural environments.
+   </td>
+</tr>
+
+<!--
+<tr style="background-color:#fff;">
+  <td colspan="5"></td>
+</tr>
+
+<tr style="background-color:#9f9;">
+<td colspan="1" style="text-align:center"></td>
+<th>aula C</th>
+</tr>
+-->
+
+<tr style="background-color:#ddd;" >
+<td>16:00-</td>
+<td>Drinks, nibbles and closing remarks</td>
+<td colspan=3></td>
+</tr>
+</table>
+
+
+<br/><br/>
+<div class="cappello">
+<a href="2014-04-28 09.35.18.jpg"> <img src="2014-04-28 09.35.18.jpg"  width="310"></a> 
+<a href="2014-04-28 09.35.41.jpg"><img src="2014-04-28 09.35.41.jpg"  width="310"></a> <br/><br/>
+
+<a href="2014-04-28 16.41.51.jpg"><img src="2014-04-28 16.41.51.jpg"  width="310"></a>
+<a href="2014-04-28 16.41.41.jpg"><img src="2014-04-28 16.41.41.jpg"  width="310"></a> <br/><br/>
+</div>
+
+
+</body>
+</html>
