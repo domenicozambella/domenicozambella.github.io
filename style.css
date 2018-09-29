@@ -6,12 +6,12 @@ body {font-family: "Times New Roman", Times, serif;
       font-size:10pt;
       background-color: fffff0;
       margin: 5ex;
-      line-height: 2ex;
-      width:70ex;
+      line-height: 2.5ex;
+      width:100ex;
       text-align:left;
 }
 
-h1   {  margin-top: 3ex;
+h1   {  margin-top: 2.5ex;
         margin-bottom: 2ex;
         font-size:14pt;
         padding: 0 0;
@@ -20,11 +20,10 @@ h1   {  margin-top: 3ex;
 
 
 h2   {  font-size:12pt;
-        padding: 30 0;
         font-weight:bold;
 }
 
-h3   {  font-size: initial;
+h3   {  font-size: 10pt;
         color:black; 
         margin-bottom:0ex;
         padding-bottom:1ex;
@@ -35,243 +34,10 @@ em{
    font-style:italic;
 }
 
-a{color:maroon;}
+a     {  color:maroon;
+}
 
 li{
    margin-bottom: 1.5ex;
 }
-
-.abstract{display:none;
-}
-
-.homepage{color:2E492B;
-}
-
-p{margin-bottom:10;
-}
-
-.normallist{list-style: disc outside none;
-}
-
-.normallist li{margin-bottom:5;
-}
-
-.seminarlist{list-style: disc outside none;
-}
-
-.seminarlist li{margin-bottom:20;
-}
-
-i {font-style:italic;
-}
-
-b {font-weight:bold;
-   color:7A2222;
-}
-
-
-/*    STYLE FOR HEADER   */
-
-
-header{clear:both;
-position:fixed;
-top:0;
-padding: 10 100 20 100;
-}
-
-
-
-#logo{float:left;
-left:0;
-margin-right: 30;
-text-align:right;
-font-size:25px;
-}
-
-#logo h1{text-align:center;
-font-size:35px;
-padding-bottom:10;
-}
-
-
-
-
-#navigation{float:right;
-right:0;
-text-align:center;
-font-size:25px;
-padding-top:20;
-border-bottom:solid 5px;
-color:8F432E;
-}
-
-
-#navigation li{
-display:inline;
-}
-
-#navigation li a{
-text-decoration:none;
-display: inline-block;
-padding: 10;
-color:8F432E;
-}
-
-
-#navigation a:hover{
-background-color:C1D1C5;
-border-radius:10px/20px;
-}
-
-
-
-/*   GENERAL STYLE FOR CONTENT SECTION  */
-
-
-
-#content{margin: 150 100 0 100;
-display:block;
-}
-
-#content h4{padding: 10 0;
-font-weight:bold;
-}
-
-#content img{float:right;
-}
-
-
-
-#content dt{margin: 10 0;
-font-weight:bold;
-font-size:1.1em;
-}
-
-#content h5{font-style:italic;
-font-size:1.1em;
-}
-
-#content dd{margin-left:50;
-}
-
-
-
-
-/*  STYLE FOR THE PAGE "MEMBRI"   */
-
-
-
-#contact{display:block;
-padding: 0 0 20 0;
-}
-
-#contact img{float:left;
-}
-
-#contact h6{font-weight:bold;
-font-size:1.1em;
-}
-
-#contact li{padding:0 15 10 0;
-}
-
-#contact address{float:left;
-padding: 0 10;
-}
-
-
-#memberlist > li{display:inline-block;
-text-align:center;
-}
-
-
-
-
-/*  STYLE FOR THE PAGE "CORSI"   */
-
-
-
-#course ul{margin-left:30;
-}
-
-#course li{margin-top:10;
-}
-
-#course ol{padding-left:15;
-list-style:decimal;
-}
-
-.class{list-style:lower-alpha;
-}
-
-#course h6{font-style:italic;
-font-size:1.1em;
-}
-
-
-
-/*   STYLE FOR THE PAGE "SEMINARI"   */
-
-
-#event{border:solid 1px;
-display:block;
-padding:15;
-}
-
-#event h3{text-align:center;
-}
-
-#event h6{font-style:italic;
-font-size:1.1em;
-margin-top:10;
-}
-
-table {width:100%;
-}
-
-
-#workshop{display:block;
-margin:20 100;
-}
-
-#workshop h1{text-align:center;
-}
-
-#workshop p{margin: 10 0;
-}
-
-#workshop h4, #workshop dt{margin: 10 0;
-font-weight:bold;
-}
-
-#workshop h6{font-style:italic;
-margin-bottom:10;
-}
-
-#workshop dd{margin-left:80;
-}
-
-#toc strong {font-weight:bold;
-}
-
-#toc ul {list-style-type:circle;
-padding-left:1em;
-margin-bottom:1ex;
-}
-
-#toc li {margin:0.3ex;
-}
- 
-/*   FOOTER  */ 
-
-
-footer{clear:both;
-color:gray;
-text-align:right;
-font-style:italic;
-float:bottom;
-bottom:0;
-right:0;
-}
-
 
