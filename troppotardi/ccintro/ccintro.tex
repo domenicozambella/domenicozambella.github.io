@@ -1,0 +1,103 @@
+ 
+\documentclass[12pt]{article}
+% \usepackage[a4paper,landscape, hmargin={1cm,1cm},vmargin={1cm,1cm}]{geometry}
+\usepackage[a4paper,landscape, width=29cm,vmargin={1cm,1cm}]{geometry}
+\usepackage{graphicx}
+\usepackage{transparent}
+\usepackage{tikz}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand*{\emph}[1]{%
+\tikz[baseline]\node[rectangle, fill=green, rounded corners, 
+inner xsep=0.2ex, inner ysep=0.2ex, anchor=base, minimum height = 2.7ex]{#1};}
+
+\parindent0mm
+\pagestyle{empty}
+\begin{document}
+\clearpage
+
+\includegraphics[height=19cm]{p01.pdf}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 1965}
+\end{textblock}
+\clearpage
+
+\includegraphics[height=19cm]{p02.pdf}
+
+\begin{textblock}{60}(0,105)
+\begin{tikzpicture}[draw opacity=0.2]
+   \draw[green,line width=3mm,->] (0,0) -- (2,0.1);
+  \end{tikzpicture}
+\end{textblock}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 1965}
+\end{textblock}
+\clearpage
+
+\includegraphics[height=19cm]{p03.pdf}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 1975-80 ca.}
+\end{textblock}
+\clearpage
+
+\hfil\includegraphics[height=19cm]{p04.pdf}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 1990 }
+\end{textblock}
+\clearpage
+
+
+\hfil\includegraphics[height=19cm]{p05.pdf}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge dal 2000(?)}
+\end{textblock}
+\clearpage
+
+
+\ \vfil\hfil\includegraphics[width=21cm]{p06.jpeg}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 2015}
+\end{textblock}
+\clearpage
+
+
+\ \vfil\hfil\includegraphics[width=21cm]{p06a.png}
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 2020}
+\end{textblock}
+\clearpage
+
+
+\vspace*{5cm}\hspace{20cm}\includegraphics[width=5cm]{p07.jpeg}
+\begin{textblock}{120}(60,70)
+  \LARGE
+We all know what to do,\\
+we just don’t know how to get re-elected \\
+after we’ve done it. \\
+
+\hfill Jean-Claude Juncker
+\end{textblock}
+
+
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 2007}
+\end{textblock}
+\clearpage
+
+\vspace*{5cm}\hspace{20cm}\includegraphics[width=7cm]{p08.jpeg}
+\begin{textblock}{120}(60,70)
+  \LARGE
+We must not underrate the gravity of the task which lies before us or the temerity of the ordeal [\ldots]\vskip2ex
+
+We are fighting to save the whole world [\ldots] in defense of all that is most sacred to man.
+
+\hfill Winston Churchill
+\end{textblock}
+
+\begin{textblock}{60}(220,200)
+  \hfill\emph{\Huge 1939}
+\end{textblock}
+
+\end{document}
