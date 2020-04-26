@@ -81,7 +81,7 @@ popolazione = dict({
          })
 
 for i,regione in regioni.items():
-    p  = figure(x_axis_type='datetime', title = regione, **param)
+    p  = figure(x_axis_type='datetime', title = regione, **param, y_range=(-1, 16))
     p.xaxis.formatter=DatetimeTickFormatter(days=["%d %B"])
     df_x = df[ df['denominazione_regione'] == regione ].copy()
     df_x['deceduti_diff'] = df_x['deceduti'].diff()
