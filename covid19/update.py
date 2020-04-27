@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 #
 # Author: Domenico Zambella
+#
 # GNU General Public License v3.0
 
-
+import os
 from pandas import read_csv, to_datetime
 from bokeh.plotting import figure, save, output_notebook, output_file, ColumnDataSource
 from bokeh.models import HoverTool
@@ -13,6 +14,9 @@ output_notebook(hide_banner=True)
 param = dict(width = 700, height = 350,
              tools = 'ywheel_zoom, xwheel_zoom, ypan, xpan, save, reset'
             )
+
+# I dati vengono caricati dalla repositoria della Protezione Civile
+
 URL = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/'
 
 df = read_csv(URL + 'dpc-covid19-ita-regioni.csv',
@@ -20,12 +24,14 @@ df = read_csv(URL + 'dpc-covid19-ita-regioni.csv',
                          'terapia_intensiva','deceduti']
              )
               
-# grafici regionali assoluti
               
 df['data'] = to_datetime(df['data']).dt.date
 
 regioni = df['denominazione_regione'].copy()
 regioni = regioni.drop_duplicates()
+
+
+
 
 # questo loop costruisce i grafici con i valori assoluti
 for i,regione in regioni.items():
@@ -51,10 +57,17 @@ for i,regione in regioni.items():
     output_file('./' + regione + '.html', title=regione)
     save( p) 
     
+
+    
             
 # grafici regionali relativi 
 # i grafici vengono scritti nella directory "./rel/"
-# la directory deve già esistere 
+# la directory viene creata, se non esiste 
+
+try: 
+    os.mkdir('rel') 
+except OSError as error:
+    pass
 
 popolazione = dict({
            'Lombardia':10060574,
@@ -110,3 +123,5 @@ for i,regione in regioni.items():
     p.toolbar.logo=None
     output_file('./rel/' + regione + '.html', title=regione)
     save( p)
+    
+
