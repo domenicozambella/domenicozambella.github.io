@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#apt install python3-pip#!/usr/bin/python3
 #
 # Author: Domenico Zambella
 #
@@ -11,7 +11,7 @@ from bokeh.models import HoverTool
 from bokeh.models.formatters import DatetimeTickFormatter
 
 output_notebook(hide_banner=True)
-param = dict(width = 700, height = 350,
+param = dict(width = 800, height = 400,
              tools = 'ywheel_zoom, xwheel_zoom, ypan, xpan, save, reset'
             )
 
@@ -44,7 +44,7 @@ for i,regione in regioni.items():
                      ['green',        'red',                     'black'  ],
                      ['ospedalizzati','terapia intensiva',       'decessi']) :
         p.line(       x='data', y=i, source=source, color=c, legend_label=l )
-        q = p.circle( x='data', y=i, source=source, color=c )  
+        q = p.circle( x='data', y=i, source=source, color=c, size=1)  
         p.add_tools(HoverTool(renderers=[q], 
                               tooltips=[("data", "@data{%d %B}"), (l, "@"+i)],
                               formatters = { '@data' : 'datetime'},
@@ -107,8 +107,8 @@ for i,regione in regioni.items():
                      ['green',        'red',                     'black'  ],
                      ['ospedalizzati / 10 mila abitanti','terapia intensiva / 100 mila abitanti',       'decessi / 100 mila abitanti']) :
         p.line(       x='data', y=i, source=source, color=c, legend_label=l )
-        q = p.circle( x='data', y=i, source=source, color=c )  
-        q = p.circle( x='data', y=i, source=source, color=c )  
+        q = p.circle( x='data', y=i, source=source, color=c, size=1)  
+        q = p.circle( x='data', y=i, source=source, color=c, size=1)  
         p.add_tools(HoverTool(renderers=[q], 
                               tooltips=[("data", "@data{%d %B}"), (l, "@"+i)],
                               formatters = { '@data' : 'datetime'},
